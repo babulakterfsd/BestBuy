@@ -13,11 +13,7 @@
 }
 body {
   font-family: "Montserrat", sans-serif;
-}
-
-/* ----- navbar ------ */
-.logo:hover {
-  color: #9E7777;
+  overflow-x: hidden;
 }
 
 /* --------- rating ---------*/
@@ -64,14 +60,19 @@ body {
     transition: .5s;
 }
 
-/*media query */
- @media (max-width: 576px) {
- 
-  .cart {
-    position: relative;
-    margin: 0px auto 100px;
+/*---------- media query ------------*/
+ @media (min-width: 577px) {
+  .search-bar {
+    width: 50% !important; 
   }
-  .cart-main {
-    padding-right: 0px;
-  }
+}
+@media (max-width: 576px) {
+ .cart {
+   position: relative;
+   margin: 0px auto 100px;
+   width: 100%;
+ }
+ .cart-main {
+   padding-right: 0px;
+ }
 }
