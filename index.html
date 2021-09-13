@@ -43,39 +43,41 @@
      <!-- navbar -->
      <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-          <a class="navbar-brand fw-bold fs-1 ms-md-5 text-gray" href="#" >BestBuy</a>
+          <a class="navbar-brand fw-bold ms-md-5 primary-text-color logo" href="#" >BestBuy</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto me-md-5 fw-bold">
                   <li class="nav-item">
-                      <a class="nav-link active text-gray" aria-current="page" href="#" >Home</a>
+                      <a class="nav-link active primary-text-color" aria-current="page" href="#" >Home</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link text-gray" href="#" >Products</a>
+                      <a class="nav-link primary-text-color" href="#" >Products</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link text-gray" href="#" >Pricing</a>
+                      <a class="nav-link primary-text-color" href="#" >Pricing</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link text-gray" href="#" >Login</a>
+                      <a class="nav-link primary-text-color" href="#" >Login</a>
                   </li>
               </ul>
         </div>
       </div>
   </nav>
-   </header>
+</header>
+<!-- header ends -->
+
   <!-- main section  -->
   <main class="main mt-5">
     <!-- search-box -->
     <div class="container">
        <h1 class="text-center fw-bold ">Welcome To BestBuy</h1>
-       <p class="text-center text-gray"><small>whatever you want, whenever you want</small></p>
+       <p class="text-center secondary-text-color"><small>whatever you want, whenever you want</small></p>
       <div class="search-box mt-1">
         <div class="input-group mb-3 w-50 mx-auto">
           <input type="text" class="form-control" id="input-field" placeholder="Search Products...">
-          <button class="btn bg-indian-red text-white px-4" type="button" id="search-btn" onclick="loadProducts()">Search</button>
+          <button class="btn primary-bg-color text-white px-4" type="button" id="search-btn" onclick="loadProducts()">Search</button>
         </div>
       </div>
     </div>
@@ -104,36 +106,27 @@
                 <tr>
                   <th>Total Added-Products:</th>
                   <td><span id="total-Products">0</span></td>
-                  <td></td>
-                  <td></td>
                 </tr>
                 <tr>
                   <th>Price:</th>
                   <td>$ <span id="price">0</span></td>
-                  <td></td>
-                  <td></td>
                 </tr>
                 <tr>
                   <th>Delivery-Charge:</th>
                   <td>$ <span id="delivery-charge">20</span></td>
-                  <td></td>
-                  <td></td>
                 </tr>
                 <tr>
                   <th>Total-Tax:</th>
                   <td>$ <span id="total-tax">0</span></td>
-                  <td></td>
-                  <td></td>
                 </tr>
                 <tr>
                   <th scope="row">Total</th>
                   <td colspan="2">$ <span id="total">0</span></td>
-                  <td></td>
                 </tr>
               </tbody>
             </table>
             <div class="parces text-center">
-              <button class="btn text-white text-center bg-indian-red">Buy Now</button>
+              <button class="btn text-white text-center primary-bg-color">Buy Now</button>
             </div>
           </div>
         </div>
@@ -148,5 +141,4 @@
   <!-- add javascript  file  -->
   <script src="./js/app.js"></script>
 </body>
-
 </html>

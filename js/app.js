@@ -237,9 +237,9 @@ const displayRateIcon = (rate) => {
       rateIcon += `<i class="bi bi-star"></i>`;
     }
   }
-
   return rateIcon;
 };
+
 // show all product in UI 
 const showProducts = (products) => {
   const allProducts = products.map((pd) => pd);
@@ -259,13 +259,13 @@ const showProducts = (products) => {
                 <h6>Rating count: ${product.rating.count}</h6>
                 <div class="">
                 <span class = "fs-6 rating">Rating: </span>
-                    <span class="text-indian-red fs-6 fw-bold">${displayRateIcon(product.rating.rate)} <span class = "text-secondary fw-bold">(${product.rating.rate})</span></span>
+                    <span class="text-warning fs-6 fw-bold">${displayRateIcon(product.rating.rate)} <span class = "text-secondary fw-bold">(${product.rating.rate})</span></span>
                 </div>
                 </div>
                 <div class="card-footer text-center">
                   <div class="d-flex flex-column flex-md-row justify-content-between">
-                    <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="btn px-2 mb-1 mb-md-0 bg-indian-red text-white ">Add to cart</button>
-                    <button id="details-btn" class="btn text-white bg-gray  px-2" >See Details</button>
+                    <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="btn px-2 mb-1 mb-md-0 primary-bg-color text-white ">Add to cart</button>
+                    <button id="details-btn" class="btn text-white secondary-bg-color  px-2" >See Details</button>
                   </div>
                 </div>
             </div>     
